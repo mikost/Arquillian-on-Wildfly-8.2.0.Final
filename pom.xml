@@ -18,6 +18,15 @@
     <version.jboss.bom>8.2.1.Final</version.jboss.bom>
   </properties>
 
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.17</version> <!-- Use at least version 2.17 according to recommendation at http://arquillian.org/guides/getting_started -->
+      </plugin>
+    </plugins>
+  </build>
+
   <dependencyManagement>
     <dependencies>
       <dependency>
