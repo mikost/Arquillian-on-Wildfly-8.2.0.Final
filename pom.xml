@@ -56,5 +56,13 @@
            org.wildfly.bom:jboss-javaee-7.0-with-tools-->
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>org.wildfly</groupId>
+      <artifactId>wildfly-arquillian-container-managed</artifactId>
+      <!-- The version of this artifact is specified by
+           org.wildfly.bom:jboss-javaee-7.0-with-tools-->      
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 </project>
