@@ -15,13 +15,29 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <version.jboss.bom>8.2.1.Final</version.jboss.bom>
   </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <!-- Transitively imports (amongst others)
+                org.jboss.arquillian:arquillian-bom:1.1.2.Final-wildfly-1 -->
+        <groupId>org.wildfly.bom</groupId>
+        <artifactId>jboss-javaee-7.0-with-tools</artifactId>
+        <version>${version.jboss.bom}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.8.1</version>
+      <!-- The version of this artifact is specified by
+           org.wildfly.bom:jboss-javaee-7.0-with-tools-->
       <scope>test</scope>
     </dependency>
   </dependencies>
