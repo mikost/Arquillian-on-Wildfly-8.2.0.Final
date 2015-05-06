@@ -10,7 +10,7 @@ There are two suggested uses of this repository:
         $ cd Arquillian-on-Wildfly-8.2.0.Final
         $ mvn test
 
- 2. Browse through the commit history as a tutorial on how to set up this kind of Maven project. 
+ 2. Or just browse through the commit history as a tutorial on how to set up this kind of Maven project or to "cherry pick" certain configuration steps into an existing Maven project.
 A very convenient way to do that is through the "Commits" tab above (in Github).
 I have made efforts to produce a "nice" (pedagogical) commit history, with appropriately commented commits in (some kind of) logical order.
 
